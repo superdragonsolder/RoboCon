@@ -1,8 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target r2_decision_core[0m
-[ 45%] Built target r2_decision_core
-[35m[1mConsolidate compiler generated dependencies of target r2_decision_demo[0m
-[35m[1mConsolidate compiler generated dependencies of target r2_path_planner_demo[0m
-[35m[1mConsolidate compiler generated dependencies of target r2_hardware_example[0m
-[ 63%] Built target r2_path_planner_demo
-[ 81%] Built target r2_hardware_example
-[100%] Built target r2_decision_demo

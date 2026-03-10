@@ -1,4 +1,0 @@
-Invoking command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yf/ros2_ws/ros2/build/r2_decision_ros2 -- -j22 -l22
-Invoked command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yf/ros2_ws/ros2/build/r2_decision_ros2 -- -j22 -l22
-Invoking command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yf/ros2_ws/ros2/build/r2_decision_ros2
-Invoked command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yf/ros2_ws/ros2/build/r2_decision_ros2

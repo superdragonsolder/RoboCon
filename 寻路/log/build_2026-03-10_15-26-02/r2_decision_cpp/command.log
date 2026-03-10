@@ -1,4 +1,0 @@
-Invoking command in '/home/yf/ros2_ws/build/r2_decision_cpp': /usr/bin/cmake /home/yf/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/install/r2_decision_cpp
-Invoked command in '/home/yf/ros2_ws/build/r2_decision_cpp' returned '0': /usr/bin/cmake /home/yf/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/install/r2_decision_cpp
-Invoking command in '/home/yf/ros2_ws/build/r2_decision_cpp': /usr/bin/cmake --build /home/yf/ros2_ws/build/r2_decision_cpp -- -j22 -l22
-Invoked command in '/home/yf/ros2_ws/build/r2_decision_cpp' returned '0': /usr/bin/cmake --build /home/yf/ros2_ws/build/r2_decision_cpp -- -j22 -l22

@@ -1,0 +1,58 @@
+[0.010s] Invoking command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yf/ros2_ws/ros2/r2_decision_ros2 -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/ros2/install/r2_decision_ros2
+[0.022s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.104s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.118s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.120s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.124s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.130s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.139s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.160s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.160s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.218s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.298s] -- Configuring done
+[0.306s] -- Generating done
+[0.309s] -- Build files have been written to: /home/yf/ros2_ws/ros2/build/r2_decision_ros2
+[0.314s] Invoked command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/yf/ros2_ws/ros2/r2_decision_ros2 -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/ros2/install/r2_decision_ros2
+[0.315s] Invoking command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yf/ros2_ws/ros2/build/r2_decision_ros2 -- -j22 -l22
+[0.355s] [ 11%] [32mBuilding CXX object CMakeFiles/r2_decision_core_ros2.dir/home/yf/ros2_ws/cpp/src/strategy.cpp.o[0m
+[0.355s] [ 22%] [32mBuilding CXX object CMakeFiles/r2_decision_core_ros2.dir/home/yf/ros2_ws/cpp/src/state_machine.cpp.o[0m
+[0.778s] [ 33%] [32m[1mLinking CXX static library libr2_decision_core_ros2.a[0m
+[0.803s] [ 33%] Built target r2_decision_core_ros2
+[0.818s] [ 44%] [32mBuilding CXX object CMakeFiles/safety_guard_node.dir/src/safety_guard_node.cpp.o[0m
+[0.818s] [ 55%] [32mBuilding CXX object CMakeFiles/mission_state_node.dir/src/mission_state_node.cpp.o[0m
+[0.821s] [ 66%] [32mBuilding CXX object CMakeFiles/launch_manager_node.dir/src/launch_manager_node.cpp.o[0m
+[3.599s] [ 77%] [32m[1mLinking CXX executable safety_guard_node[0m
+[3.614s] [ 88%] [32m[1mLinking CXX executable launch_manager_node[0m
+[3.758s] [ 88%] Built target safety_guard_node
+[3.773s] [ 88%] Built target launch_manager_node
+[6.205s] [100%] [32m[1mLinking CXX executable mission_state_node[0m
+[6.465s] [100%] Built target mission_state_node
+[6.473s] Invoked command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/yf/ros2_ws/ros2/build/r2_decision_ros2 -- -j22 -l22
+[6.478s] Invoking command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yf/ros2_ws/ros2/build/r2_decision_ros2
+[6.485s] -- Install configuration: ""
+[6.485s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/launch_manager_node
+[6.486s] -- Set runtime path of "/home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/launch_manager_node" to ""
+[6.486s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/mission_state_node
+[6.488s] -- Set runtime path of "/home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/mission_state_node" to ""
+[6.488s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/safety_guard_node
+[6.489s] -- Set runtime path of "/home/yf/ros2_ws/ros2/install/r2_decision_ros2/lib/r2_decision_ros2/safety_guard_node" to ""
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/launch
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/launch/r2_bringup.launch.py
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/config
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/config/params.yaml
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/ament_index/resource_index/package_run_dependencies/r2_decision_ros2
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/ament_index/resource_index/parent_prefix_path/r2_decision_ros2
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/environment/ament_prefix_path.sh
+[6.489s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/environment/ament_prefix_path.dsv
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/environment/path.sh
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/environment/path.dsv
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/local_setup.bash
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/local_setup.sh
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/local_setup.zsh
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/local_setup.dsv
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/package.dsv
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/ament_index/resource_index/packages/r2_decision_ros2
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/cmake/r2_decision_ros2Config.cmake
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/cmake/r2_decision_ros2Config-version.cmake
+[6.490s] -- Installing: /home/yf/ros2_ws/ros2/install/r2_decision_ros2/share/r2_decision_ros2/package.xml
+[6.492s] Invoked command in '/home/yf/ros2_ws/ros2/build/r2_decision_ros2' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/yf/ros2_ws/ros2/build/r2_decision_ros2

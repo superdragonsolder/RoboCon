@@ -1,0 +1,28 @@
+[0.010s] Invoking command in '/home/yf/ros2_ws/build/r2_decision_cpp': /usr/bin/cmake /home/yf/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/install/r2_decision_cpp
+[0.057s] -- The CXX compiler identification is GNU 11.4.0
+[0.063s] -- Detecting CXX compiler ABI info
+[0.120s] -- Detecting CXX compiler ABI info - done
+[0.124s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.124s] -- Detecting CXX compile features
+[0.125s] -- Detecting CXX compile features - done
+[0.125s] -- Configuring done
+[0.128s] -- Generating done
+[0.129s] -- Build files have been written to: /home/yf/ros2_ws/build/r2_decision_cpp
+[0.131s] Invoked command in '/home/yf/ros2_ws/build/r2_decision_cpp' returned '0': /usr/bin/cmake /home/yf/ros2_ws -DCMAKE_INSTALL_PREFIX=/home/yf/ros2_ws/install/r2_decision_cpp
+[0.132s] Invoking command in '/home/yf/ros2_ws/build/r2_decision_cpp': /usr/bin/cmake --build /home/yf/ros2_ws/build/r2_decision_cpp -- -j22 -l22
+[0.163s] [  9%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/state_machine.cpp.o[0m
+[0.163s] [ 18%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/hardware_manager.cpp.o[0m
+[0.165s] [ 27%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/strategy.cpp.o[0m
+[0.166s] [ 36%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/path_planner.cpp.o[0m
+[0.766s] [ 45%] [32m[1mLinking CXX static library libr2_decision_core.a[0m
+[0.803s] [ 45%] Built target r2_decision_core
+[0.820s] [ 54%] [32mBuilding CXX object cpp/CMakeFiles/r2_hardware_example.dir/src/hardware_example.cpp.o[0m
+[0.822s] [ 63%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_demo.dir/src/main.cpp.o[0m
+[0.825s] [ 72%] [32mBuilding CXX object cpp/CMakeFiles/r2_path_planner_demo.dir/src/path_planner_demo.cpp.o[0m
+[1.005s] [ 81%] [32m[1mLinking CXX executable r2_path_planner_demo[0m
+[1.060s] [ 81%] Built target r2_path_planner_demo
+[1.295s] [ 90%] [32m[1mLinking CXX executable r2_hardware_example[0m
+[1.365s] [ 90%] Built target r2_hardware_example
+[1.458s] [100%] [32m[1mLinking CXX executable r2_decision_demo[0m
+[1.541s] [100%] Built target r2_decision_demo
+[1.549s] Invoked command in '/home/yf/ros2_ws/build/r2_decision_cpp' returned '0': /usr/bin/cmake --build /home/yf/ros2_ws/build/r2_decision_cpp -- -j22 -l22

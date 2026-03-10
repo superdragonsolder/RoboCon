@@ -1,0 +1,2 @@
+/usr/bin/ar qc libr2_decision_core.a CMakeFiles/r2_decision_core.dir/src/state_machine.cpp.o CMakeFiles/r2_decision_core.dir/src/strategy.cpp.o CMakeFiles/r2_decision_core.dir/src/hardware_manager.cpp.o
+/usr/bin/ranlib libr2_decision_core.a

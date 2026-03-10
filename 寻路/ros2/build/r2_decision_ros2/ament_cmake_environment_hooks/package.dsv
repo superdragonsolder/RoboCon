@@ -1,0 +1,4 @@
+source;share/r2_decision_ros2/local_setup.bash
+source;share/r2_decision_ros2/local_setup.dsv
+source;share/r2_decision_ros2/local_setup.sh
+source;share/r2_decision_ros2/local_setup.zsh

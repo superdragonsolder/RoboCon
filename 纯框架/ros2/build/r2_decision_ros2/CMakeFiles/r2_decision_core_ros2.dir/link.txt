@@ -1,0 +1,2 @@
+/usr/bin/ar qc libr2_decision_core_ros2.a CMakeFiles/r2_decision_core_ros2.dir/home/yf/ros2_ws/cpp/src/state_machine.cpp.o CMakeFiles/r2_decision_core_ros2.dir/home/yf/ros2_ws/cpp/src/strategy.cpp.o
+/usr/bin/ranlib libr2_decision_core_ros2.a

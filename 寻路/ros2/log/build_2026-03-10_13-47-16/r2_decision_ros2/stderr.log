@@ -1,0 +1,35 @@
+[31mCMake Error at /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries):
+  The keyword signature for target_link_libraries has already been used with
+  the target "mission_state_node".  All uses of target_link_libraries with a
+  target must be either all-keyword or all-plain.
+
+  The uses of the keyword signature are here:
+
+   * CMakeLists.txt:28 (target_link_libraries)
+
+Call Stack (most recent call first):
+  CMakeLists.txt:31 (ament_target_dependencies)
+
+[0m
+[31mCMake Error at CMakeLists.txt:34 (target_link_libraries):
+  The plain signature for target_link_libraries has already been used with
+  the target "launch_manager_node".  All uses of target_link_libraries with a
+  target must be either all-keyword or all-plain.
+
+  The uses of the plain signature are here:
+
+   * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)
+
+
+[0m
+[31mCMake Error at CMakeLists.txt:35 (target_link_libraries):
+  The plain signature for target_link_libraries has already been used with
+  the target "safety_guard_node".  All uses of target_link_libraries with a
+  target must be either all-keyword or all-plain.
+
+  The uses of the plain signature are here:
+
+   * /opt/ros/humble/share/ament_cmake_target_dependencies/cmake/ament_target_dependencies.cmake:145 (target_link_libraries)
+
+
+[0m

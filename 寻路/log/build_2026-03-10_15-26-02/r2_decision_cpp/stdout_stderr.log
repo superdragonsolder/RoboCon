@@ -1,0 +1,24 @@
+-- The CXX compiler identification is GNU 11.4.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/yf/ros2_ws/build/r2_decision_cpp
+[  9%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/state_machine.cpp.o[0m
+[ 18%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/hardware_manager.cpp.o[0m
+[ 27%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/strategy.cpp.o[0m
+[ 36%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_core.dir/src/path_planner.cpp.o[0m
+[ 45%] [32m[1mLinking CXX static library libr2_decision_core.a[0m
+[ 45%] Built target r2_decision_core
+[ 54%] [32mBuilding CXX object cpp/CMakeFiles/r2_hardware_example.dir/src/hardware_example.cpp.o[0m
+[ 63%] [32mBuilding CXX object cpp/CMakeFiles/r2_decision_demo.dir/src/main.cpp.o[0m
+[ 72%] [32mBuilding CXX object cpp/CMakeFiles/r2_path_planner_demo.dir/src/path_planner_demo.cpp.o[0m
+[ 81%] [32m[1mLinking CXX executable r2_path_planner_demo[0m
+[ 81%] Built target r2_path_planner_demo
+[ 90%] [32m[1mLinking CXX executable r2_hardware_example[0m
+[ 90%] Built target r2_hardware_example
+[100%] [32m[1mLinking CXX executable r2_decision_demo[0m
+[100%] Built target r2_decision_demo

@@ -1,0 +1,41 @@
+<?xml version="1.0" ?>
+<root BTCPP_format="4">
+  <BehaviorTree ID="R2Navigation">
+    <Sequence name="R2导航根序列">
+      <Action ID="更新当前位姿" name="更新当前位姿"/>
+      <Fallback name="定位保护">
+        <Condition ID="检查雷达重定位" name="检查雷达重定位"/>
+        <Action ID="底盘紧急制动" name="底盘紧急制动"/>
+      </Fallback>
+      <Condition ID="看门狗检查" name="看门狗检查"/>
+      <Sequence name="导航执行流">
+        <Action ID="设置相对目标" name="设置相对目标"/>
+        <Action ID="计算PID速度" name="计算PID速度"/>
+        <Condition ID="是否到达目标" name="是否到达目标"/>
+      </Sequence>
+      <Sequence name="常用移动动作">
+        <Action ID="前进" name="前进"/>
+        <Action ID="后退" name="后退"/>
+        <Action ID="左移" name="左移"/>
+        <Action ID="右移" name="右移"/>
+        <Action ID="左转90度" name="左转90度"/>
+        <Action ID="右转90度" name="右转90度"/>
+      </Sequence>
+    </Sequence>
+  </BehaviorTree>
+  <TreeNodesModel>
+    <Action ID="更新当前位姿" editable="true"/>
+    <Condition ID="检查雷达重定位" editable="true"/>
+    <Action ID="底盘紧急制动" editable="true"/>
+    <Condition ID="看门狗检查" editable="true"/>
+    <Action ID="设置相对目标" editable="true"/>
+    <Action ID="计算PID速度" editable="true"/>
+    <Condition ID="是否到达目标" editable="true"/>
+    <Action ID="前进" editable="true"/>
+    <Action ID="后退" editable="true"/>
+    <Action ID="左移" editable="true"/>
+    <Action ID="右移" editable="true"/>
+    <Action ID="左转90度" editable="true"/>
+    <Action ID="右转90度" editable="true"/>
+  </TreeNodesModel>
+</root>

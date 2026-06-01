@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mavlink>
+
+    <version>1</version>
+    
+    <!-- 所有的枚举定义放在这里 -->
+    <enums>
+        <!-- 机械臂动作枚举 -->
+        <enum name="ARM_ACTION_CMD">
+            <description>Arm action enum</description>
+            <entry value="0" name="ARM_ACTION_IDLE">
+                <description>IDLE/STOP current action</description>
+            </entry>
+            <entry value="1" name="ARM_DRAW_KFS">
+                <description>Draw KFS</description>
+            </entry>
+        </enum>
+
+        <!-- 攀爬机构命令枚举 -->
+        <enum name="CLIMBING_CMD_TYPE">
+            <description>Climbing mechanism command set.</description>
+            <entry value="0" name="CLIMBING_CMD_INIT_POSE">
+                <description>Keep the mechanism in the normal 20cm preparation pose. Maps to Climbing_Init_Pose_Start().</description>
+            </entry>
+            <entry value="1" name="CLIMBING_CMD_PREPARE_40CM">
+                <description>Raise to the 40cm preparation pose. Maps to Climbing_Prepare_40cm().</description>
+            </entry>
+            <entry value="2" name="CLIMBING_CMD_EXECUTE_UP_20CM">
+                <description>Execute 20cm climbing after the upper computer has moved the chassis to the edge. Maps to Climbing_Auto_Start_From_Touch_20cm().</description>
+            </entry>
+            <entry value="3" name="CLIMBING_CMD_EXECUTE_UP_40CM">
+                <description>Execute 40cm climbing after the upper computer has moved the chassis to the edge. Maps to Climbing_Auto_Start_From_Touch_40cm().</description>
+            </entry>
+            <entry value="4" name="CLIMBING_CMD_EXECUTE_DOWN_20CM">
+                <description>Execute 20cm descending after the upper computer has moved the chassis to the edge. Maps to Climbing_Descend_Auto_Start_20cm().</description>
+            </entry>
+            <entry value="5" name="CLIMBING_CMD_WEAPON_HEAD_CLAMP_START">
+                <description>Start weapon head clamping. Maps to Climbing_WeaponHeadClampStart().</description>
+            </entry>
+            <entry value="6" name="CLIMBING_CMD_WEAPON_ROD_DOCK_START">
+                <description>Start weapon rod docking. Maps to Climbing_WeaponRodDockStart().</description>
+            </entry>
+        </enum>
+
+        <!-- 夹爪机构命令枚举 -->
+        <enum name="CLAMPING_CMD_TYPE">
+            <description>Weapon-head clamping command set.</description>
+            <entry value="0" name="CLAMPING_CMD_MOVE_TO_PARALLEL">
+                <description>Move the mechanism to the parallel/clamp-ready angle (90 deg). Maps to ClampingController::MoveToClampAngle().</description>
+            </entry>
+            <entry value="1" name="CLAMPING_CMD_GRAB">
+                <description>Close the claw to clamp the weapon head. Maps to ClampingController::OpenSolenoid().</description>
+            </entry>
+            <entry value="2" name="CLAMPING_CMD_MOVE_TO_RESET">
+                <description>Reset the mechanism angle back to 0 deg. Maps to ClampingController::MoveToResetAngle().</description>
+            </entry>
+            <entry value="3" name="CLAMPING_CMD_RELEASE">
+                <description>Release the claw. Maps to ClampingController::ReleaseSolenoid().</description>
+            </entry>
+            <entry value="4" name="CLAMPING_CMD_MOVE_TO_DOCK">
+                <description>Raise to the docking position.</description>
+            </entry>
+            <entry value="5" name="CLAMPING_CMD_ADJUST">
+                <description>Adjust the chassis position for clamping.</description>
+            </entry>
+            <entry value="6" name="CLAMPING_CMD_START">
+                <description>Start the clamping process.</description>
+            </entry>
+        </enum>
+    </enums>
+
+    <!-- 所有的消息体定义放在这里 -->
+    <messages>
+        <!-- ID 200: 机械臂控制 -->
+        <message id="200" name="ARM_CONTROL">
+            <description>Arm control</description>
+            <field type="uint8_t" name="action_cmd" enum="ARM_ACTION_CMD">Command ID to execute</field>
+        </message>
+
+        <!-- ID 201: 底盘速度控制 -->
+        <message id="201" name="CHASSIS_VELOCITY_CMD">
+            <description>Chassis target velocity command (Vx, Vy, Vw)</description>
+            <field type="float" name="vx" units="m/s">X-axis target velocity</field>
+            <field type="float" name="vy" units="m/s">Y-axis target velocity</field>
+            <field type="float" name="vw" units="rad/s">Rotation target velocity</field>
+        </message>
+
+        <!-- ID 202: 攀爬指令 -->
+        <message id="202" name="CLIMBING_CMD">
+            <description>Climbing mechanism command from upper computer.</description>
+            <field type="uint8_t" name="command" enum="CLIMBING_CMD_TYPE">Climbing command selector</field>
+        </message>
+
+        <!-- ID 203: 夹爪指令 -->
+        <message id="203" name="CLAMPING_CMD">
+            <description>Clamping mechanism command from upper computer.</description>
+            <field type="uint8_t" name="command" enum="CLAMPING_CMD_TYPE">Clamping command selector</field>
+        </message>
+
+    </messages>
+</mavlink>
